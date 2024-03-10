@@ -1,0 +1,43 @@
+/* #background-image{
+    background-image: url("Assests/luffy.jpg");
+    opacity: 1;
+    filter: blur(1px);
+} */
+*{
+    background-image: url(Assests/luffy.jpg);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    color: thistle;
+    top: 7vh;
+    filter: blur(0px);
+}
+
+.button-container {
+  display: flex;
+  justify-content:center;
+  border: 2vh;
+  padding: 2vh;
+  margin: 10px 100px 10 px 100 px;
+}
+
+button {
+  padding: 15px 25px;
+  border: solid;
+  border-radius: 10%;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: thistle;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.main_small_a_item {
+  margin-top: 1em;
+  margin-left: 10px;
+  text-decoration: none;
+}
