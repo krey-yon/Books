@@ -11,7 +11,7 @@
 body{
     background: #5c7185;
     background-image: url("Assests/luffy.jpg");
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 
 ul {
