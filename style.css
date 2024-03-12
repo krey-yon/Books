@@ -19,7 +19,8 @@ ul {
 }
   
 .accordion-menu {
-    max-width: 400px;
+    max-width: 60vw;
+    max-height: auto;
     margin: 100px auto 20px;
     background: #242d410c;
     border-radius: 8px;
@@ -86,4 +87,18 @@ ul {
 .submenuItems a:hover {
     background-color: #5c7185;
     color: #fff;
+  }
+#footer {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 6vh;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.01);
+    z-index: -2;
+  }
+  .footer-block {
+    margin: 20px 0;
   }
