@@ -1,105 +1,151 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-body{
-    background: #5c7185;
-    background-image: url("Assests/luffy.jpg");
-    background-size: cover;
-    min-height: 100vh;
+body {
+  background-image: url("Assests/luffy.jpg");
+  background-size: cover;
+  min-height: 100vh;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
-  
+
 .accordion-menu {
-    max-width: 60vw;
-    max-height: auto;
-    margin: 100px auto 20px;
-    background: #242d410c;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 10px #000;
+  max-width: 60vw;
+  max-height: auto;
+  margin: 100px auto 20px;
+  background: #242d410c;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000;
 }
 
 .accordion-menu li:last-child .dropdown {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 .accordion-menu li.active .dropdown {
-    color: #fff;
+  color: #fff;
 }
-.accordion-menu li.active .dropdown  .fa-chevron-down {
-    transform: rotate(180deg);
+.accordion-menu li.active .dropdown .fa-chevron-down {
+  transform: rotate(180deg);
 }
 .dropdown {
-    cursor: pointer;
-    display: block;
-    padding: 15px 15px 15px 45px;
-    font-size: 18px;
-    border-bottom: 2px solid #2d374d00;
-    color: #999999;
-    position: relative;
-    transition: all 0.4s ease-out;
+  cursor: pointer;
+  display: block;
+  padding: 15px 15px 15px 45px;
+  font-size: 18px;
+  border-bottom: 2px solid #2d374d00;
+  color: #999999;
+  position: relative;
+  transition: all 0.4s ease-out;
 }
 
-.dropdown:hover{
-    background: #566f82; /* fallback colour */
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#27455c0c), to(#273a4713));
+.dropdown:hover {
+  background: #566f82; /* fallback colour */
+  background: -webkit-gradient(
+    linear,
+    0% 0%,
+    0% 100%,
+    from(#27455c0c),
+    to(#273a4713)
+  );
 }
-  
-.dropdown  i {
-    position: absolute;
-    top: 17px;
-    left: 16px;
+
+.dropdown i {
+  position: absolute;
+  top: 17px;
+  left: 16px;
 }
 
 .dropdown .fa-chevron-down {
-    right: 12px;
-    left: auto;
-    transition: transform 0.2s ease-in-out;
+  right: 12px;
+  left: auto;
+  transition: transform 0.2s ease-in-out;
 }
 
 .submenuItems {
-    display: none;
-    background: #2d374d0a;;
-    transition: all 2s ease-in-out;
+  display: none;
+  background: #2d374d0a;
+  transition: all 2s ease-in-out;
 }
 
-.accordion-menu li.active .submenuItems{
-    display: block;
+.accordion-menu li.active .submenuItems {
+  display: block;
 }
 
 .submenuItems a {
-    display: block;
-    color: #66b2ff;
-    font-weight: 600;
-    padding: 12px 12px 12px 45px;
-    transition: all 0.2s ease-out;
-    text-decoration: none;
+  display: block;
+  color: #66b2ff;
+  font-weight: 600;
+  padding: 12px 12px 12px 45px;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
 }
 
 .submenuItems a:hover {
-    background-color: #5c7185;
-    color: #fff;
-  }
+  background-color: #5c7185;
+  color: #fff;
+}
 #footer {
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    height: 6vh;
-    color: azure;
-    background-color: rgba(0, 0, 0, 0.01);
-    z-index: -2;
-  }
-  .footer-block {
-    margin: 20px 0;
-  }
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 6vh;
+  color: azure;
+  background-color: rgba(0, 0, 0, 0.01);
+  z-index: -2;
+}
+.footer-block {
+  margin: 20px 0;
+}
+
+/* sticky button */
+.fixed-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  z-index: 9999;
+  text-align: center;
+}
+.fixed-whatsapp:before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #00c85300;
+  position: absolute;
+  border-radius: 100%;
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.fixed-whatsapp svg {
+  vertical-align: middle;
+  z-index: 2;
+  position: relative;
+}
+/* scroll bar */
+::-webkit-scrollbar-track {
+  background-color: #28292b6b;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: #28292bcc;
+}
+::-webkit-scrollbar-thumb {
+  background: #0c0c0cfd;
+  border-radius: 19px;
+}
