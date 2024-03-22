@@ -109,34 +109,7 @@ ul {
   margin: 20px 0;
 }
 
-/* sticky button */
-.fixed-whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  z-index: 9999;
-  text-align: center;
-}
-.fixed-whatsapp:before {
-  content: "";
-  width: 100px;
-  height: 100px;
-  background-color: #00c85300;
-  position: absolute;
-  border-radius: 100%;
-  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
-  z-index: 1;
-  top: 0;
-  left: 0;
-}
-.fixed-whatsapp svg {
-  vertical-align: middle;
-  z-index: 2;
-  position: relative;
-}
+
 /* scroll bar */
 ::-webkit-scrollbar-track {
   background-color: #28292b6b;
@@ -148,4 +121,34 @@ ul {
 ::-webkit-scrollbar-thumb {
   background: #0c0c0cfd;
   border-radius: 19px;
+}
+
+
+/* temp */
+#svg-wrapper{
+  position: fixed;
+  bottom:10px;
+  right:10px;
+  width: 53px;
+  height: auto;
+  svg{
+    position:relative;
+    padding:0px !important;
+    stroke:none;
+  }
+  &:hover{
+      width: 56px;
+      transition: width .1s;
+      -webkit-transition: width .1s; /* Safari */
+  }
+}
+
+// Toggle
+.toggle-animation{
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align:center;
+  border:solid 1px;
+  font-family:helvetica;
 }
