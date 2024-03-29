@@ -153,3 +153,21 @@ ul {
   font-family:helvetica;
   }
 
+/*  responsive */
+@media screen and (max-width: 600px)
+{
+  .accordion-menu {
+    max-width: 80vw;
+  }
+  .dropdown {
+    font-size: 16px;
+  }
+  .submenuItems a {
+    font-size: 14px;
+  }
+  body {
+    background-image: url("Assests/luffybgmobo.jpeg");
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
